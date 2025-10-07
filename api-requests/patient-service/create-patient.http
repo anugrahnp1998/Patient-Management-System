@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "name": "Matheus Cunha",
-  "email": "cunha.mathues@example.com",
+  "email": "cunha.matheus@example.com",
   "address": "Carrington, UK",
   "dateOfBirth": "1996-12-12",
   "registeredDate": "2025-10-06"
