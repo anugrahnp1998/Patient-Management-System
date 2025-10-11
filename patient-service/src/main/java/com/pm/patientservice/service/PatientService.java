@@ -9,6 +9,7 @@ import com.pm.patientservice.model.Patient;
 import com.pm.patientservice.repository.PatientRepository;
 import org.springframework.stereotype.Service;
 
+import java.security.PublicKey;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
@@ -51,5 +52,9 @@ public class PatientService {
 
             Patient updatedPatient = patientRepository.save(patient);
             return PatientMapper.toDTO(updatedPatient);
+        }
+
+        public void deletePatient(UUID id){
+        patientRepository.deleteById(id);
         }
 }
